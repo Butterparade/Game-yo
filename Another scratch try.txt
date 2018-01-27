@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+
+
+<body>
+
+<div>
+
+	<div class="sidebar" id="sidebarstats">
+		<a href="#">Strength</a>
+		<a href="#">Fort</a>
+		<a href="#">Spirit</a>
+		<a href="#">Willpower</a>
+	</div>
+
+	<div class="sidebar" id="sidebarpools">
+		<a href="#">Health</a>
+		<a href="#">Mana</a>
+	</div>
+
+	<div class="sidebar" id="sidebarlinks">
+		<a href="#">Kingdom</a>
+		<a href="#">Character</a>
+		<a href="#">Spellbook</a>
+	</div>
+
+</div>
+
+</body>
+</html>
