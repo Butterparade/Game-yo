@@ -4,7 +4,14 @@
   "description": "TBD",
   "main": "src/index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "postinstall": "npm run setup && npm run build",
+    "setup": "npm run setup:fonts && npm run setup:static",
+    "setup:fonts": "cp -r node_modules/font-awesome/fonts fonts",
+    "setup:static": "cp -r static/* .",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "browserify src/index.js -o app.js -t [ babelify ]",
+    "build:css": "node-sass assets/style.scss app.css"
   },
   "repository": {
     "type": "git",
@@ -23,7 +30,11 @@
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^8.0.0",
-    "browserify": "^15.2.0"
+    "browserify": "^15.2.0",
+    "bulma": "^0.6.2",
+    "choo": "^6.7.0",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.7.2"
   },
   "devDependencies": {
     "standard": "^10.0.3"
