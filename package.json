@@ -11,7 +11,9 @@
     "setup:static": "cp -r static/* .",
     "build": "npm run build:js && npm run build:css",
     "build:js": "browserify src/index.js -o app.js -t [ babelify ]",
-    "build:css": "node-sass assets/style.scss app.css"
+    "build:css": "node-sass assets/style.scss app.css",
+    "serve": "serve .",
+    "watch": "nodemon --exec 'npm run build && npm run serve' --watch 'src/*.js'"
   },
   "repository": {
     "type": "git",
@@ -37,6 +39,8 @@
     "node-sass": "^4.7.2"
   },
   "devDependencies": {
+    "nodemon": "^1.14.11",
+    "serve": "^6.4.9",
     "standard": "^10.0.3"
   }
 }

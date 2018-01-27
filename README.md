@@ -7,6 +7,15 @@ A game built by friends.
 
 It is still under active development.
 
+## Install
+
+```bash
+git clone https://github.com/garbados/Game-yo
+cd Game-yo
+npm i
+npm run serve
+```
+
 ## License
 
 [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)
