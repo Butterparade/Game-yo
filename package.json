@@ -1,0 +1,31 @@
+{
+  "name": "game-yo",
+  "version": "1.0.0-alpha",
+  "description": "TBD",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Butterparade/Game-yo.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "James Thayer <strikemako@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Butterparade/Game-yo/issues"
+  },
+  "homepage": "https://github.com/Butterparade/Game-yo#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.2.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
+}
